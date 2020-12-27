@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+mybatis:
+  type-aliases-package: com.eblog.POJO , com.eblog.queryvo
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+comment.avatar: /images/avatar.png
+message.avatar: /images/avatar.png
+pagehelper:
+  helper-dialect: mysql
