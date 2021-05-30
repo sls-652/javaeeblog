@@ -21,5 +21,4 @@ public class ArchiveShowController {
         model.addAttribute("blogs", blogs);
         return "archives";
     }
-
 }

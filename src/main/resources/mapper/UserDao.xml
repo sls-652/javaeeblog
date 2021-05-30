@@ -7,4 +7,9 @@
         select * from blog.t_user
         where username = #{username} and password = #{password};
     </select>
+    <!--select id="findByUsername" resultType="user"-->
+    <select id="findByUsername" resultType="com.eblog.POJO.User">
+        select * from blog.t_user
+        where username = #{username}
+    </select>
 </mapper>
